@@ -1,0 +1,78 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// setting for landing page
+#landing{
+	width: 100%;
+	height: 100vh;
+	background-image: asset-url("bg2.jpg");
+	background-size: cover;
+	background-position: center center; 
+	position: relative;
+	.center-form{
+		height: 160px;
+		transition: all 750ms;
+		h1{
+			margin: 0px;
+			height: 90px;
+			line-height: 90px;
+			font-size: 75px;
+			color: #FFCC00;
+			font-weight: normal;
+			font-family: "Bali";
+		}
+		.row{
+			height: 51px;
+			margin-top: 19px;
+			input{
+				background-color: rgba(0,0,0,0);
+				border: 0px;
+				box-shadow:none;
+				outline: none;
+				font-size: 28px;
+				color: #FFFFFF;
+				border-bottom: 1px solid #FFFFFF;
+				padding: 5px 20px;
+				font-family: 'Booster';
+				min-width: 60%;
+			}
+			button{
+				margin: 0 15px;
+				background-color: rgba(0,0,0,0);
+				border: none;
+				outline: none;
+				i{
+					font-size: 28px;
+					color: #FFFFFF;
+					transition: all 500ms;
+				}
+				i:hover{
+					color: #FFCC00;
+				}
+			}
+		}
+	}
+}
+
+// setting for footer
+#footer{
+	background-color: rgba(255,255,255,0.45);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: #fff;
+	h2{
+		font-size: 18px;
+		font-weight: normal;
+		margin: 0px;
+		font-family: 'Booster';
+		a{
+			color: #FFCC00;
+			text-decoration: none;
+		}
+	}
+}

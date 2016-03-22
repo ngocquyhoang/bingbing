@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Bingbing</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+<html lang="en">
+	<head>
+		<title>Bingbing | Search your image</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+		<%= csrf_meta_tags %>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<%= favicon_link_tag 'favicon.png', type: 'image/png' %>
+	</head>
+	<body data-no-turbolink>
+		<!-- pre loaded -->
+		<div class="pre-loader"></div>
+		<!-- main content -->
+		<%= yield %>
+		<!-- end -->
+	</body>
 </html>

@@ -9,8 +9,22 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
+// require turbolinks
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require bootstrap-sprockets
 //= require_tree .
+
+jQuery(document).ready(function($) {
+	setTimeout(function(){ setHeight(); }, 250);
+});
+// on load
+$(window).load(function() {
+	$(".pre-loader").fadeOut(500);
+});
+function setHeight() {
+	sHeight = $(document).height();
+	cHeight = (sHeight-45)/2-160;
+	$('.center-form').css('margin-top', cHeight);
+}
