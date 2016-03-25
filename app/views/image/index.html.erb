@@ -16,18 +16,20 @@
 	</div>
 	<div class="clearfix"></div>
 	<div class="main-image col-md-12">
-	<% if @image_result %>
-	<% @image_result.each do |image| %>
-		<div class="grid-image">
-			<div class="image-box">
-				<img src="<%= image %>" alt="search result image" class="image-result">
-				<div class="image-layout">
-					<a href="<%= image %>" target="blank"><button><i class="fa fa-link"></i></button></a>
+		<% if @result_data_image_array && @result_data_image_array["notice"] == "success" %>
+			<% @result_data_image_array["data"].each do |image| %>
+				<div class="grid-image">
+					<div class="image-box">
+						<img src='<%= image["url"] %>' alt="<%= image["title"]%>" class="image-result">
+						<div class="image-layout">
+							<a href='<%= image["url"] %>' target="blank"><button><i class="fa fa-link"></i></button></a>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-	<% end %>
-	<% end %>
+			<% end %>
+		<% else %>
+			<h2 class="text-center nodata"><%= @result_data_image_array["data"] %></h2>
+		<% end %>
 	</div>
 	<div class="clearfix"></div>
 	<%= render "layouts/footer" %>
