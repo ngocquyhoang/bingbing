@@ -8,13 +8,18 @@
 	background-position: center center; 
 	position: relative;
 	.header-menu{
-		h1{
-			font-size: 50px;
-			color: #FF9500;
-			font-weight: normal;
-			font-family: "Bali";
-			margin-top: 0px;
-			margin-bottom: 0px;
+		.logo-text{
+			h1{
+				font-size: 50px;
+				color: #FF9500;
+				font-weight: normal;
+				font-family: "Bali";
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+		}
+		.logo-text:hover{
+			text-decoration: none;
 		}
 		.search-box{
 			margin-top: 5px;
