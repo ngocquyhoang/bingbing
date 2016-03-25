@@ -1,12 +1,17 @@
 <div id="landing">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="text-center center-form">
-			<h1>bingbing</h1>
+			<h1>bingBing</h1>
 			<div class="row">
-				<input type="text" name="" value="" placeholder="Search image, ex: hotgirl. . .">
-				<button type="submit"><i class="fa fa-search" id="search-button"></i></button>
+				<form action="<%= image_path %>" method="get" id="search_form">
+					<%= text_field_tag :search_keyword, params[:search_keyword], placeholder: "Search image, ex: ocean . . ." %>
+					<%= button_tag(type: "submit", :name => nil) do %>
+						<i class="fa fa-search" id="search_button"></i>
+					<% end %>
+				</form>
 			</div>
+			<div class="clearfix"></div>
 		</div>
 	</div>
-	<%= render "footer" %>
+	<%= render "layouts/footer" %>
 </div>

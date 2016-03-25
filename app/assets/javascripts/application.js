@@ -25,6 +25,23 @@ $(window).load(function() {
 });
 function setHeight() {
 	sHeight = $(document).height();
-	cHeight = (sHeight-45)/2-160;
+	cHeight = (sHeight-45)/2-131;
 	$('.center-form').css('margin-top', cHeight);
 }
+// onload
+$(window).load(function(){
+	var mainImageWidth = $('.main-image').width();
+	$('.main-image .grid-image').css('width', mainImageWidth/3 );
+	$('.main-image').masonry({
+		itemSelector : '.grid-image',
+		columnWidth : mainImageWidth/3,
+		isAnimated: true,
+		animationOptions: {
+			duration: 1000,
+			easing: 'easeOutCubic',
+			queue: false
+			}
+	});
+	var documentHeight = $(document).height();
+	$('.main-image').css('min-height', documentHeight - 148 );
+});

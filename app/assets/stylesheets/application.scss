@@ -16,6 +16,7 @@
 @import "font-awesome";
 // import file
 @import "home.scss";
+@import "image.scss";
 
 @font-face {
 	font-family: 'Bali';
@@ -43,4 +44,19 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #fff;
+}
+// setting for footer
+#footer{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	h2{
+		font-size: 18px;
+		font-weight: normal;
+		margin: 0px;
+		font-family: 'Booster';
+		a{
+			color: #FF9500;
+			text-decoration: none;
+		}
+	}
 }

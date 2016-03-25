@@ -1,0 +1,117 @@
+// Place all the styles related to the image controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.main-search{
+	background-image: asset-url("bg4.jpg");
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center center; 
+	position: relative;
+	.header-menu{
+		h1{
+			font-size: 50px;
+			color: #FF9500;
+			font-weight: normal;
+			font-family: "Bali";
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		.search-box{
+			margin-top: 5px;
+			input{
+				font-size: 20px;
+				padding: 5px 20px;
+				font-family: 'Booster';
+				border: 0px;
+				border-bottom: 1px solid #FF9500;
+				background-color: rgba(0,0,0,0);
+				color: #FFFFFF;
+			}
+			button{
+				background-color: rgba(0,0,0,0);
+				color: #FF9500;
+				border: 0px;
+				margin-top: 5px;
+				i{
+					font-size: 25px;
+				}
+			}
+			input:focus, button:focus{
+				outline: none;
+			}
+			input::-webkit-input-placeholder {
+				color: #FFFFFF !important;
+			}
+			input:-moz-placeholder {
+				color: #FFFFFF !important;  
+			}
+			input::-moz-placeholder {
+				color: #FFFFFF !important;  
+			}
+			input:-ms-input-placeholder {  
+				color: #FFFFFF !important;  
+			}
+		}
+	}
+	.main-image{
+		margin-top: 25px;
+		background-color: rgba(255,255,255,0.25);
+		margin-bottom: 25px;
+		padding: 0;
+		.grid-image{
+			padding: 0;
+			.image-box{
+				position: relative;
+				.image-layout{
+					display: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(255,255,255,0.55);
+					button{
+						background-color: rgba(0,0,0,0);
+						border: 0px;
+						box-shadow: none;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						margin-top: -15px;
+						margin-left: -15px;
+						transition: all 350ms;
+						i{
+							color: #FF9500;
+							font-size: 30px;
+							transition: all 350ms;
+							
+						}
+					}
+					button:focus{
+						outline: none;
+					}
+					button:hover{
+						margin-top: -23px;
+						margin-left: -21px;
+						i{
+							font-size: 46px;
+						}
+					}
+				}
+			}
+			.image-result{
+				width: 100%;
+				z-index: -2;
+			}
+		}
+		.grid-image:hover{
+			.image-layout{
+				display: block;
+			}
+		}
+	}
+	#footer{
+		background-color: rgba(255,255,255,0.45);
+		color: #FFFFFF;
+	}
+}
