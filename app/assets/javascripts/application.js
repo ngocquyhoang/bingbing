@@ -31,10 +31,10 @@ function setHeight() {
 // onload
 $(window).load(function(){
 	var mainImageWidth = $('.main-image').width();
-	$('.main-image .grid-image').css('width', mainImageWidth/3 );
+	$('.main-image .grid-image').css('width', mainImageWidth/5 );
 	$('.main-image').masonry({
 		itemSelector : '.grid-image',
-		columnWidth : mainImageWidth/3,
+		columnWidth : mainImageWidth/5,
 		isAnimated: true,
 		animationOptions: {
 			duration: 1000,

@@ -22,9 +22,9 @@
 			<% @result_data_image_array["data"].each do |image| %>
 				<div class="grid-image">
 					<div class="image-box">
-						<img src='<%= image["url"] %>' alt="<%= image["title"]%>" class="image-result">
+						<img src='<%= image["url"] + "_m.jpg" %>' alt="<%= image["title"]%>" class="image-result">
 						<div class="image-layout">
-							<a href='<%= image["url"] %>' target="blank"><button><i class="fa fa-link"></i></button></a>
+							<a href='<%= image["url"] + "_b.jpg" %>' target="blank"><button><i class="fa fa-link"></i></button></a>
 						</div>
 					</div>
 				</div>
