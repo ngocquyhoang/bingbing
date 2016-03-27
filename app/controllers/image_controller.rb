@@ -4,7 +4,7 @@ class ImageController < ApplicationController
 
   	if params[:search_keyword]
   		key_word = params[:search_keyword]
-  		flickAPIKey = '5149a64fa91469647a7511af9adf33a5'
+  		flickAPIKey = '9d521153617867801bcdd3be2db6bd9d'
   		httpRequestUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key='+flickAPIKey+'&text='+key_word+'&per_page=30&nojsoncallback=1&format=json'
 	  	require 'net/http'
 			result_data = Net::HTTP.get(URI.parse(httpRequestUrl))
