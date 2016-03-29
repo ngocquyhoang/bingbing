@@ -1,7 +1,6 @@
 class ImageController < ApplicationController
   def index
   	@result_data_image_array = {}
-
   	if params[:search_keyword]
   		key_word = params[:search_keyword]
   		flickAPIKey = '9d521153617867801bcdd3be2db6bd9d'
