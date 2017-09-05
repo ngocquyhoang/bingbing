@@ -1,14 +1,13 @@
-// Place all the styles related to the image controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 .main-search{
 	background-image: asset-url("bg4.jpg");
 	min-height: 100vh;
 	background-size: cover;
 	background-position: center center; 
 	position: relative;
-	.header-menu{
-		.logo-text{
+
+	.header-menu {
+
+		.logo-text {
 			h1{
 				font-size: 50px;
 				color: #FF9500;
