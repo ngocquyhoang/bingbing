@@ -1,19 +1,16 @@
 default: &default
-  adapter: mysql2
-  encoding: utf8
-  pool: 5
-  username: root
-  password: '123456789'
-  socket: /var/run/mysqld/mysqld.sock
+  adapter: sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
 
 development:
   <<: *default
-  database: bingbing_development
+  database: db/development.sqlite3
+
 test:
   <<: *default
-  database: bingbing_test
+  database: db/test.sqlite3
+
 production:
   <<: *default
-  database: bingbing_production
-  username: bingbing
-  password: <%= ENV['BINGBING_DATABASE_PASSWORD'] %>
+  database: db/production.sqlite3
